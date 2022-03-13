@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
     그러나 Test 클래스 내에서는 이미 TestConfig가 생성되기도 전에 스프링 컨테이너에서 TestConfig 빈이 있는지 찾아오려고 함 -> 스프링에서는 그런 빈이 없다고 나옴
  */
 
-//무상태로 설계해야 한다!!! -> 필드 대신에 자바에서 공유되지 않는, 지역변수, 파라미터, ThreadLocal 등을 사용해야 함
+// 무상태로 설계해야 한다!!! -> 필드 대신에 자바에서 공유되지 않는, 지역변수, 파라미터, ThreadLocal 등을 사용해야 함
 
 class StatefulServiceTest {
 
