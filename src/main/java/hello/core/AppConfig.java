@@ -31,7 +31,8 @@ public class AppConfig {
     call AppConfig.memberRepository
     call AppConfig.discountPolicy 이렇게 호출이 된다.
     
-    call AppConfig.memberRepository 세번 호출이 되어야하는데 중복된건 한번만 호출이 됨 -> 싱글톤 보장
+    call AppConfig.memberRepository 세번 호출이 되어야하는데 중복된건 한번만 호출이 됨 -> 싱글톤 보장 ->
+    @Configuration 때문에 한번만 호출됨 -> 없으면 모두 호출되고 싱글톤 보장안됨
      */
 
     @Bean(name="mmm")  //이렇게 name을 사용해도 되지만 기본을 따라가는게 좋음!!!!!!!
