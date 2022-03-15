@@ -6,6 +6,8 @@ import org.springframework.context.annotation.FilterType;
 
 @Configuration  //설정(구성)정보로 사용
 @ComponentScan( //자동으로 스프링 빈을 등록해줌 (소스코드를 열면 @Component 애노테이션이 붙어있다)
+        basePackages = "hello.core.member",
+        basePackageClasses = AutoAppConfig.class,
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
  /*
